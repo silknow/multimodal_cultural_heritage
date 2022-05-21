@@ -20,5 +20,5 @@ This work was supported by the Slovenian Research Agency and the European Union'
 
 ## Other Links
 
-    * Project website: [SILKNOW](https://silknow.eu)
-    * Project github: [SILKNOW GITHUB](https://github.com/silknow)
+* Project website: [SILKNOW](https://silknow.eu)
+* Project github: [SILKNOW GITHUB](https://github.com/silknow)
