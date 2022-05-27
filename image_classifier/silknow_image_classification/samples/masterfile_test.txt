@@ -1,0 +1,1 @@
+multimodal_image_centered_img_cent_test.txt

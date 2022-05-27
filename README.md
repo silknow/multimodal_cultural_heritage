@@ -14,9 +14,6 @@ README. This can be modified in the respective scripts.
 Each directory corresponds do a different modality classifier. See each
 directory for its respective README.
 
-**Note**: Currently the image classifier has not been uploaded.
-
-
 ## Acknowledgments
 This work was supported by the Slovenian Research Agency and the European Union's Horizon 2020 research and innovation program under SILKNOW grant agreement No. 769504.
 

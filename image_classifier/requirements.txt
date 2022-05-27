@@ -1,0 +1,19 @@
+# Dev/Deployment
+sphinx
+sphinx_rtd_theme
+nose
+coverage
+pypi-publisher
+urllib3
+numpy
+pandas==0.24.1
+tqdm
+opencv-python
+tensorflow-gpu==1.14.0
+tensorflow-hub==0.6.0
+matplotlib
+sklearn
+scipy
+xlsxwriter
+scikit-image
+scikit_learn==0.22.2.post1
