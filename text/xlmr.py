@@ -48,32 +48,31 @@ from util import compute_metrics
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# using gradient accumulation to allow the experiment to run GPUs with less memory
 MODEL_NAME = "xlm-roberta-base"
-MAX_SEQ_LEN = 500  # changed for GPUs with less memory
-OUTPUT_DIR = "./output"
+MAX_SEQ_LEN = 512
+OUTPUT_DIR = "./model"
 DATA_FILE = "../data/dataset/dataset.tsv"
 REPLACEMENTS = False
-# SEED accidentally lost
 CONFIG = {
     "output_dir": OUTPUT_DIR,
+    "seed": 42,
     "overwrite_output_dir": True,
-    "per_device_train_batch_size": 16,
-    "gradient_accumulation_steps": 4,
-    "per_device_eval_batch_size": 64,
-    "learning_rate": 3e-5,
-    "weight_decay": 0.02,
-    "num_train_epochs": 20,
+    "per_device_train_batch_size": 4,
+    "gradient_accumulation_steps": 1,
+    "per_device_eval_batch_size": 32,
     "do_train": True,
     "do_eval": True,
     "do_predict": True,
     "prediction_loss_only": False,
     "evaluation_strategy": "epoch",
-    "save_strategy": "epoch",
+    "learning_rate": 1e-05,
+    "weight_decay": 0.04,
     "num_warmup_steps": 0,
+    "num_train_epochs": 16,
+    "save_strategy": "no",
     "save_total_limit": 1,
     "fp16": True,
-    "load_best_model_at_end": True,
+    "load_best_model_at_end": False,
     "metric_for_best_model": "eval_f1_macro",
     "greater_is_better": True,
 }
@@ -361,7 +360,7 @@ def main():
         p, r, f, s = precision_recall_fscore_support(
             all_tgts, all_preds, average="macro"
         )
-        print(f"macro_prfs: {p} {r} {f}")
+        print(f"macro_prfs: {p} {r} {f} {s}")
 
 
 def _mp_fn(index):

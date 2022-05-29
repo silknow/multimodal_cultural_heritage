@@ -188,13 +188,13 @@ def parameter_tuning(clf, x, y, cv, output_dir):
     """
 
     params = {
-        "learning_rate": [0.2, 0.3],
+        "learning_rate": [0.1, 0.2, 0.3],
         "gamma": [0, 0.2, 0.4],
-        "max_depth": [4, 8],
+        "max_depth": [2, 4, 6, 8],
         "min_child_weight": [1, 2, 4],
         "subsample": [0.6, 0.8, 1.0],
         "colsample_bytree": [0.6, 0.8,],
-        "n_estimators": [100, 500],
+        "n_estimators": [100, 200, 500],
     }
 
     clf = GridSearchCV(
