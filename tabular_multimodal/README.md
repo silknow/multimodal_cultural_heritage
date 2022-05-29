@@ -17,7 +17,7 @@ This corresponds to the base dataset.
 
 
 For the multimodal classifier, use `dataset_multimodal.tsv`, expect to be in the base directory of this repository at data/multimodal/dataset_multimodal.tsv.
-This corresponds to the train and validation splits of the original dataset with predictions already made corresponding to the exact run/values reported in the article.
+This corresponds to the validation and test splits of the original dataset with predictions already made corresponding to the exact run/values reported in the article.
 
 ## Notes
  * The hyperparameter search space is defined within `gbcls.py`.
