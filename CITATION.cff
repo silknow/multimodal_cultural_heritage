@@ -42,8 +42,9 @@ preferred-citation:
     given-names: "Jorge Sebastián"
   - family-names: "Salvatella"
     given-names: "Mar Gaitán"
-  doi: 10.1007/s00530-022-01025-2
+  title: "Multimodal metadata assignment for cultural heritage artifacts"
   journal: "Multimedia Systems"
   month: 11
-  title: "Multimodal metadata assignment for cultural heritage artifacts"
+  doi: 10.1007/s00530-022-01025-2
   year: 2022
+  publisher: "Springer"
