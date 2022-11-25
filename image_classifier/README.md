@@ -1,7 +1,7 @@
 Overview
 --------
 
-This software provides python functions for the classification of images, and training and evaluation of classification models. It consists of four main parts:
+This directory provides python functions for the classification of images, and training and evaluation of classification models. It consists of four main parts:
 1. The creation of a dataset (download of the images used in the article),
 2. The training of a new classifier (with the parameters mentioned in the article as defaults),
 3. The evaluation of an existing classifier,
